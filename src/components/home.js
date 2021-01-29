@@ -9,35 +9,40 @@ export default function Home() {
     const routeToPizza = () => {
         history.push('/pizza');
     };
-
+    
     return (
         <Wrapper>
-            <PizzaImg src="https://www.pngarts.com/files/3/Pizza-PNG-Download-Image.png" alt='pizza'/>
             <Button onClick={routeToPizza}>Pizza?</Button>
         </Wrapper>
     );
 }
 
-const PizzaImg = styled.img`
-    width: 50%;
-    max-height: 300px;
-    object-fit: cover;
-    margin: 10px 0 20px 0;
-`;
+
 const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('https://www.pizzainn.com/wp-content/uploads/2019/12/Buffet-Close-pizzas-APPROVED.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+    margin: 25px 0 0 0;
+    box-shadow: 0px 5px 6px -2px rgb(128, 127, 127);
 `;
 const Button = styled.button`
-    font-size: 2rem;
+    font-size: 5rem;
     letter-spacing: 2px;
     border-radius: 5px;
     border-style: none;
-    border: 1px solid rgb(210, 210, 210);
-    box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: 0px 1px 25px -2px rgb(200, 200, 200);
+    background: rgb(255, 255, 255, .8);
     &:hover {
         cursor: pointer;
+        transform: scale(1.05);
+        transition: .2s;
     }
+    transition: .2s;
 `;
