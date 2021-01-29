@@ -22,7 +22,6 @@ describe('Pizza App', () => {
         sausage().click();
         pineapple().click();
     })
-    
 
     it('can submit the form', () => {
         nameInput().type('Dartagnan');
